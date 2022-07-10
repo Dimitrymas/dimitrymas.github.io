@@ -1,1 +1,24 @@
-body {background-image: url(https://aduvan.ru/wp-content/uploads/2020/07/StockSnap_A0DYKMDRAL-1-1024x683.jpg);}
+body {
+    background-image: url(/img/background.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+.block {
+    margin: 10px 0;
+    padding: 32px;
+    font: 12px sans-serif;
+    content: " ";
+  } 
+
+#StartBlock{
+    margin: 0px 0;
+    padding: 32px;
+    font: 12px sans-serif;
+    width: 100%;
+    position: fixed;
+    content: " ";
+}
+.nav-flex-start {
+    justify-content: flex-start!important;
+}
+
