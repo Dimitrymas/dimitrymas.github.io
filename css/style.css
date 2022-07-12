@@ -3,6 +3,5 @@ div.col-sm-12{
     background-color: rgb(148, 148, 148);
 }
 .container-fluid{
-    padding-left:0.25rem!important;
-    padding-right:0.25rem!important;
+    background-color: rgb(148, 148, 148)!important;
 }
