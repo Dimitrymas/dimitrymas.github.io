@@ -1,24 +1,8 @@
-body {
-    background-image: url(/img/background.jpg);
-    background-size: 100% 100%;
-    background-attachment: fixed;
-}
-.block {
-    margin: 10px 0;
-    padding: 32px;
-    font: 12px sans-serif;
-    content: " ";
-  } 
 
-#StartBlock{
-    margin: 0px 0;
-    padding: 32px;
-    font: 12px sans-serif;
-    width: 100%;
-    position: fixed;
-    content: " ";
+div.col-sm-12{
+    background-color: rgb(148, 148, 148);
 }
-.nav-flex-start {
-    justify-content: flex-start!important;
+.container-fluid{
+    padding-left:0.25rem!important;
+    padding-right:0.25rem!important;
 }
-
