@@ -1,0 +1,14 @@
+@use "node_modules/bootstrap/scss/bootstrap";
+
+
+.cardContainer {
+  @extend .col-12;
+  @extend .col-lg-6;
+
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}

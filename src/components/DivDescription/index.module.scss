@@ -1,0 +1,24 @@
+@use "node_modules/bootstrap/scss/bootstrap";
+
+
+.descriptionContainer {
+    @extend .col-6;
+}
+
+
+.descriptionDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.description {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
