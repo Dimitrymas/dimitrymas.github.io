@@ -3,15 +3,17 @@
 
 .descriptionContainer {
     @extend .col-6;
+    height: 100%;
+    display: grid;
 }
 
 
 .descriptionDiv {
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: auto;
 }
 .title {
     font-size: 2rem;

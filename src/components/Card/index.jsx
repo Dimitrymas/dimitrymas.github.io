@@ -4,12 +4,22 @@ import DivDescription from "../DivDescription/index.jsx";
 import PropTypes from "prop-types";
 
 
-function Card({title, description, imageSrc}) {
+function Card({title, description, imageSrc, imageLeft}) {
     console.log(styles);
     return (
         <div className={styles.cardContainer}>
-            <DivImage src={imageSrc}/>
-            <DivDescription description={description} title={title}/>
+            {
+                imageLeft ?
+                    <>
+                        <DivImage src={imageSrc}/>
+                        <DivDescription title={title} description={description}/>
+                    </>
+                    :
+                    <>
+                        <DivDescription title={title} description={description}/>
+                        <DivImage src={imageSrc}/>
+                    </>
+            }
         </div>
     );
 }
