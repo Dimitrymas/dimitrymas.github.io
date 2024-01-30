@@ -9,18 +9,17 @@
 
 
 .descriptionDiv {
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0 2vw 0 2vw;
 }
 .title {
-    font-size: 2rem;
+    font-size: 2.2vw;
     font-weight: bold;
     margin-bottom: 1rem;
 }
 .description {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+    font-size: 1.5vw;
 }

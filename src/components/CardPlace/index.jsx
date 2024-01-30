@@ -9,6 +9,7 @@ function CardPlace () {
                 places.map((place) => {
                     return (
                         <Card
+                            key={place.id}
                             title={place.title}
                             description={place.description}
                             imageSrc={place.imageSrc}
