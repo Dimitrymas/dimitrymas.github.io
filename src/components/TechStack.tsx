@@ -10,23 +10,27 @@ interface TechCategory {
 const categories: TechCategory[] = [
   {
     name: "Backend",
-    items: ["Python", "FastAPI", "Strawberry GraphQL", "SQLAlchemy"],
+    items: ["Go", "Python", "FastAPI", "Strawberry GraphQL", "SQLAlchemy", "NATS", "Kafka"],
   },
   {
     name: "Frontend",
-    items: ["TypeScript", "React", "Next.js", "Tailwind CSS"],
+    items: ["TypeScript", "React", "Next.js", "Tailwind CSS", "Microfrontends"],
   },
   {
-    name: "Database",
-    items: ["PostgreSQL", "PostGIS", "MongoDB", "Redis"],
+    name: "Database & Storage",
+    items: ["PostgreSQL", "PostGIS", "MongoDB", "Redis", "ClickHouse", "MinIO"],
+  },
+  {
+    name: "Infrastructure",
+    items: ["Kubernetes", "Docker", "Linux", "GitLab CI/CD", "Traefik"],
+  },
+  {
+    name: "Observability",
+    items: ["Grafana", "Loki", "OpenTelemetry", "Prometheus"],
   },
   {
     name: "AI",
     items: ["Google Gemini"],
-  },
-  {
-    name: "DevOps",
-    items: ["Docker", "Linux", "GitLab CI/CD"],
   },
 ];
 
