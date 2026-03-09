@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import { Geist_Mono } from "next/font/google";
+import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
@@ -8,19 +7,19 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const jetbrainsMono = JetBrains_Mono({
+  variable: "--font-jetbrains-mono",
   subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: "Landerix — Fullstack Developer",
+  title: "Landerix — Backend Engineer",
   description:
-    "Backend-focused fullstack developer. Python, TypeScript, FastAPI, React, Next.js.",
+    "Backend engineer. Go + Python + TypeScript, microservice architectures, Kubernetes.",
   openGraph: {
-    title: "Landerix — Fullstack Developer",
+    title: "Landerix — Backend Engineer",
     description:
-      "Backend-focused fullstack developer. Python, TypeScript, FastAPI, React, Next.js.",
+      "Backend engineer. Go + Python + TypeScript, microservice architectures, Kubernetes.",
     url: "https://landerix.me",
     type: "website",
   },
@@ -34,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${geistMono.variable} antialiased`}
+        className={`${inter.variable} ${jetbrainsMono.variable} antialiased`}
       >
         {children}
       </body>
