@@ -56,7 +56,7 @@ export default function Hero() {
             View Projects
           </a>
           <a
-            href="https://github.com/Dimitrymas"
+            href="https://github.com/lander1x"
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-3 border border-accent text-accent hover:bg-accent/10 rounded-full font-medium transition-colors"

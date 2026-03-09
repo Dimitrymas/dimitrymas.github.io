@@ -7,7 +7,7 @@ export default function Footer() {
         </span>
         <div className="flex gap-6">
           <a
-            href="https://github.com/Dimitrymas"
+            href="https://github.com/lander1x"
             target="_blank"
             rel="noopener noreferrer"
             className="text-sm text-muted hover:text-foreground transition-colors"
