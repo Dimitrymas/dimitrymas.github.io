@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <main>
+      <main className="max-w-[960px] mx-auto px-6 md:px-8">
         <Hero />
         <Projects />
         <TechStack />

@@ -19,34 +19,26 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
         scrolled
-          ? "bg-white/80 backdrop-blur-md border-b border-[#E8DDD0]"
+          ? "bg-[#0A0A0A]/80 backdrop-blur-md border-b border-[#262626]"
           : "bg-transparent"
       }`}
     >
-      <div className="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
-        <a href="#" className="font-mono text-lg font-bold text-accent">
+      <div className="max-w-[960px] mx-auto px-6 md:px-8 h-14 flex items-center justify-between">
+        <a href="#" className="font-medium text-foreground">
           lx.
         </a>
-        <div className="flex gap-8">
+        <div className="flex gap-5 md:gap-8">
           {links.map((link) => (
             <a
               key={link.href}
               href={link.href}
-              className="text-sm text-muted hover:text-foreground transition-colors"
+              className="font-mono text-xs uppercase tracking-widest text-muted hover:text-foreground transition-colors"
             >
               {link.label}
             </a>
           ))}
-          <a
-            href="https://github.com/lander1x"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-sm text-muted hover:text-foreground transition-colors"
-          >
-            GitHub
-          </a>
         </div>
       </div>
     </nav>

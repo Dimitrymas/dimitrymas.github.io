@@ -2,64 +2,53 @@
 
 import { motion } from "framer-motion";
 
-interface TechCategory {
-  name: string;
-  items: string[];
-}
-
-const categories: TechCategory[] = [
+const categories = [
   {
     name: "Backend",
-    items: ["Go", "Python", "gRPC", "GraphQL", "NATS", "Kafka"],
+    items: "Go, Python, gRPC, GraphQL, NATS, Kafka",
   },
   {
     name: "Frontend",
-    items: ["TypeScript", "React", "Next.js", "Tailwind CSS"],
+    items: "TypeScript, React, Next.js, Tailwind CSS",
   },
   {
-    name: "Database & Storage",
-    items: ["PostgreSQL", "ClickHouse", "MongoDB", "Redis", "MinIO"],
+    name: "Storage",
+    items: "PostgreSQL, ClickHouse, MongoDB, Redis, MinIO",
   },
   {
-    name: "Infrastructure",
-    items: ["Kubernetes", "Docker", "GitLab CI/CD", "Traefik", "Linux"],
+    name: "Infra",
+    items: "Kubernetes, Docker, GitLab CI/CD, Traefik, Linux",
   },
   {
     name: "Observability",
-    items: ["Grafana", "Loki", "OpenTelemetry", "Prometheus"],
+    items: "Grafana, Loki, OpenTelemetry, Prometheus",
   },
 ];
 
 export default function TechStack() {
   return (
-    <section id="stack" className="py-24 px-6 bg-[#FFF5ED]/50">
-      <div className="max-w-5xl mx-auto">
-        <h2 className="text-3xl font-bold mb-12 text-center text-foreground">Tech Stack</h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {categories.map((cat, catIndex) => (
-            <motion.div
-              key={cat.name}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.4, delay: catIndex * 0.1 }}
-            >
-              <h3 className="text-sm font-mono text-accent mb-4 uppercase tracking-wider">
-                {cat.name}
-              </h3>
-              <div className="flex flex-wrap gap-2">
-                {cat.items.map((item) => (
-                  <span
-                    key={item}
-                    className="px-3 py-2 bg-white border border-[#E8DDD0] rounded-xl text-sm text-foreground hover:border-accent/50 transition-colors"
-                  >
-                    {item}
-                  </span>
-                ))}
-              </div>
-            </motion.div>
-          ))}
-        </div>
+    <section id="stack" className="pb-24">
+      <p className="font-mono text-xs uppercase tracking-widest text-muted mb-8">
+        Stack
+      </p>
+      <div className="space-y-4 md:space-y-0 md:grid md:grid-cols-[140px_1fr] md:gap-y-4 md:gap-x-8">
+        {categories.map((cat, i) => (
+          <motion.div
+            key={cat.name}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.4, delay: i * 0.05 }}
+            className="md:contents"
+          >
+            <span className="font-mono text-xs text-muted uppercase tracking-wider">
+              {cat.name}
+            </span>
+            <p className="text-foreground text-sm mt-1 md:mt-0">
+              {cat.items}
+            </p>
+          </motion.div>
+        ))}
       </div>
     </section>
   );
