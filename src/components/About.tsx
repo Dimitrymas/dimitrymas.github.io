@@ -12,7 +12,7 @@ export default function About() {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="text-3xl font-bold mb-8">About</h2>
+          <h2 className="text-3xl font-bold mb-8 text-foreground">About</h2>
           <p className="text-muted leading-relaxed mb-4">
             I&apos;m a fullstack developer with a strong backend focus. My core
             stack is Python with FastAPI and Strawberry GraphQL on the backend,

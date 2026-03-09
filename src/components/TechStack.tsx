@@ -32,9 +32,9 @@ const categories: TechCategory[] = [
 
 export default function TechStack() {
   return (
-    <section id="stack" className="py-24 px-6 bg-card-bg/50">
+    <section id="stack" className="py-24 px-6 bg-[#FFF5ED]/50">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-3xl font-bold mb-12 text-center">Tech Stack</h2>
+        <h2 className="text-3xl font-bold mb-12 text-center text-foreground">Tech Stack</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {categories.map((cat, catIndex) => (
             <motion.div
@@ -51,7 +51,7 @@ export default function TechStack() {
                 {cat.items.map((item) => (
                   <span
                     key={item}
-                    className="px-3 py-2 bg-card-bg border border-card-border rounded-lg text-sm text-foreground hover:border-accent/50 transition-colors"
+                    className="px-3 py-2 bg-white border border-[#E8DDD0] rounded-xl text-sm text-foreground hover:border-accent/50 transition-colors"
                   >
                     {item}
                   </span>

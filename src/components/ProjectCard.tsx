@@ -18,10 +18,10 @@ export default function ProjectCard({ project, index }: Props) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-50px" }}
       transition={{ duration: 0.4, delay: index * 0.1 }}
-      className="group block bg-card-bg border border-card-border rounded-xl p-6 hover:border-accent/50 transition-all duration-300 hover:-translate-y-1"
+      className="group block bg-white/70 backdrop-blur-sm border border-[#E8DDD0] rounded-2xl p-6 shadow-sm hover:shadow-lg hover:border-accent/50 transition-all duration-300 hover:-translate-y-1"
     >
       <div className="flex items-start justify-between mb-3">
-        <h3 className="text-lg font-semibold group-hover:text-accent transition-colors">
+        <h3 className="text-lg font-semibold text-foreground group-hover:text-accent transition-colors">
           {project.title}
         </h3>
         <svg
@@ -45,7 +45,7 @@ export default function ProjectCard({ project, index }: Props) {
         {project.tech.map((t) => (
           <span
             key={t}
-            className="text-xs font-mono text-accent/80 bg-accent/10 px-2 py-1 rounded"
+            className="text-xs font-mono text-accent bg-accent/10 px-2 py-1 rounded-md"
           >
             {t}
           </span>

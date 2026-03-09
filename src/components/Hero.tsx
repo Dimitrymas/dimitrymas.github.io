@@ -4,7 +4,11 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
-    <section className="min-h-screen flex items-center justify-center px-6">
+    <section className="min-h-screen flex items-center justify-center px-6 relative overflow-hidden">
+      {/* Decorative gradient blobs */}
+      <div className="absolute top-[-10%] right-[-5%] w-[500px] h-[500px] rounded-full bg-accent/20 blur-[120px] z-[-1]" />
+      <div className="absolute bottom-[-10%] left-[-5%] w-[400px] h-[400px] rounded-full bg-[#FED7AA]/40 blur-[120px] z-[-1]" />
+
       <div className="max-w-3xl text-center">
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -18,9 +22,9 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="text-5xl md:text-7xl font-bold tracking-tight mb-4"
+          className="text-5xl md:text-7xl font-bold tracking-tight mb-4 text-foreground"
         >
-          Dmitry Mas
+          Landerix
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -47,7 +51,7 @@ export default function Hero() {
         >
           <a
             href="#projects"
-            className="px-6 py-3 bg-accent hover:bg-accent-hover text-white rounded-lg font-medium transition-colors"
+            className="px-6 py-3 bg-accent hover:bg-accent-hover text-white rounded-full font-medium transition-colors"
           >
             View Projects
           </a>
@@ -55,7 +59,7 @@ export default function Hero() {
             href="https://github.com/Dimitrymas"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-6 py-3 border border-accent text-accent hover:bg-accent/10 rounded-lg font-medium transition-colors"
+            className="px-6 py-3 border border-accent text-accent hover:bg-accent/10 rounded-full font-medium transition-colors"
           >
             GitHub
           </a>

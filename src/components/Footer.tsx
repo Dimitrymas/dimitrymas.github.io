@@ -1,9 +1,9 @@
 export default function Footer() {
   return (
-    <footer className="py-12 px-6 border-t border-card-border">
+    <footer className="py-12 px-6 border-t border-[#E8DDD0]">
       <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
         <span className="font-mono text-sm text-muted">
-          Dmitry Mas &copy; {new Date().getFullYear()}
+          Landerix &copy; {new Date().getFullYear()}
         </span>
         <div className="flex gap-6">
           <a
